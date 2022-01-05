@@ -6,6 +6,7 @@ const prevButton = document.querySelector('#prev-button');
 const nextButton = document.querySelector('#next-button');
 const openCloseButton = document.querySelector('#buttonOpenCloseMenu');
 const menuMobileItems = document.querySelector('#menu-mobile-items');
+const logoButton= document.querySelector(".logo");
 
 openCloseButton.addEventListener('click', e =>{
     menuMobileItems.classList.toggle('menu-mobile-closed')
@@ -62,3 +63,7 @@ function loadGalleryItem(index){
     document.querySelectorAll('#details-container .item').forEach(item => { item.classList.add('item-hide');})
     document.querySelectorAll('#details-container .item')[index].classList.toggle('item-hide');     
 }
+
+logoButton.addEventListener('click',e => {
+    location.reload()
+})

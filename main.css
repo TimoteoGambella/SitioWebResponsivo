@@ -99,6 +99,7 @@ h3{
     animation-name: opening-logo;
     animation-duration: 1.6s;
     animation-timing-function: ease-in-out;
+    cursor: pointer;
 }
 
 .menu-mobile{
